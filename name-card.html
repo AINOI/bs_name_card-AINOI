@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    height: 100vh;
+    margin: 0;
+  }
+
+  .alphaimg {
+    background: url("https://picsum.photos/800/800/?random=1") no-repeat center/cover;
+  }
+
+  .text-margin {
+    margin-left: 20% !important;
+  }
+
+  .container {
+    width: 850px;
+    position: relative;
+  }
+
+  .line {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:0 150px 150px 0;
+    border-color: transparent #ffffff transparent transparent;
+    filter: drop-shadow(-8px 8px 5px rgba(0,0,0,0.2));
+    position: absolute;
+    top: -10%;
+    right: -5%;
+    z-index: 2;
+
+  }
+  .line2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:150px 0 0 150px;
+    border-color: transparent transparent transparent #ffffff;
+    filter: drop-shadow(8px -8px 10px rgba(0,0,0,0.2));
+    position: absolute;
+    bottom: -10%;
+    left: -5%;
+    z-index: 2;
+  }
+
+  @media (max-width:768px) {
+    .alphaimg {
+      height: 350px;
+    }
+    .line{
+      display: none;
+    }
+    .line2{
+      display: none;
+    }
+  }
+</style>
+
+
+<body class="d-flex align-items-center">
+  <div class="container">
+    <div class="line"></div>
+    <div class="line2"></div>
+    <div class="row shadow-lg">
+      <div class="col-12 col-md-4 alphaimg"></div>
+      <div class="col-12 col-md-8 d-flex flex-column justify-content-center">
+        <p class="text-margin m-0 mt-5 h4"> The novice Front-End Designer</p>
+        <p class="text-margin m-0 h1">Aino,Hsu</p>
+        <p class="text-margin m-0 mb-4 h3">Kamo Studio</p>
+        <p class="text-margin m-0 mt-5">住所：At somewhere,鴨桃株式会社 </p>
+        <p class="text-margin m-0">TEL：08-13-148269</p>
+        <p class="text-margin m-0">E-Mail：kamons@kuamail.com</p>
+        <p class="text-margin m-0 mb-5">公式サイト：https://www.kamons.com/</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
